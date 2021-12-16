@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header .container .logo{
+header .container .logo {
     height: 50px;
     border-right: 2px solid grey;
     padding-right: 20px;
@@ -69,14 +69,21 @@ div .text-large {
     margin-bottom: 2px;
 }
 
-.debug .content .container {
-    background-color: blue;
+.col-1 p {
+    color: grey;
+}
+
+.col-1 h2 {
+    font-size: xx-large;
+}
+
+.content .container {
     height: 450px;
 }
 
-.debug footer .container {
-    background-color: purple;
+footer .container {
     min-height: 50px;
+    margin-top: 100px;
 }
 
 .clearfix::after {
@@ -86,22 +93,41 @@ div .text-large {
 }
 
 .skyblue {
-    background-color: skyblue;
-    height: calc(100% - 50px - 15px - 15px);
+    min-height: calc(100% - 50px - 15px - 15px);
     width: 200px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .row .col-1 {
-    background-color: skyblue;
     width: 100%;
     height: 50px;
+    padding: 2px;
+    margin-bottom: 20px;
 }
 
 .container .col-2{
     float: left;
     width: 20%;
+}
+
+.col-2 .img-col-2, .col-4 .img-col-4, .col-3 .img-col-3 {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+}
+
+.img-col-2 img, .img-col-4 img, .img-col-3 img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.text-col-2 p, .text-col-4 p, .text-col-3 p {
+    color: grey;
+    margin-top: 10px;
 }
 
 .container .col-3 {
@@ -114,4 +140,13 @@ div .text-large {
 .container .col-4 {
     float: left;
     width: 20%;
+}
+
+footer span {
+    color: red;
+}
+
+footer .container {
+    text-align: center;
+    line-height: 50px;
 }
