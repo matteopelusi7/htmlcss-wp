@@ -4,21 +4,69 @@
     box-sizing: border-box;
 }
 
-.container {
-    background-color: pink;
+header .container .logo{
+    height: 50px;
+    border-right: 2px solid grey;
+    padding-right: 20px;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+    margin-top: 20px;
+    color: grey;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit
+}
+
+main .introduction {
+    position: relative;
+}
+
+.container, .container-1 {
     margin: 0 auto;
     max-width: 1024px;
     min-height: 100px;
     margin-top: 20px;
 }
 
-.debug .container {
-    background-color: pink;
+.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-.debug .introduction .container {
-    background: sandybrown;
-    min-height: 250px;
+.introduction .container-1 {
+    min-height: 450px;
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.container-1 .text-introduction {
+    color: white;
+    width: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    z-index: 1;
+}
+
+div .text-large {
+    font-size: x-large;
+    margin-bottom: 2px;
 }
 
 .debug .content .container {
@@ -67,7 +115,3 @@
     float: left;
     width: 20%;
 }
-
-
-
-
